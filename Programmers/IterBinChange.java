@@ -7,7 +7,6 @@ class Solution {
                 if (s.charAt(i) == '0') ans[1]++;
                 else cnt++;
             }
-
             s = Integer.toBinaryString(cnt);
             ans[0]++;
         }
