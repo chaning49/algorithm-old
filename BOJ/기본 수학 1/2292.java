@@ -5,7 +5,7 @@ import java.io.InputStreamReader;
 public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-집
+
         int n = Integer.parseInt(br.readLine());
         int cnt = 1;
         int limits = 1;
