@@ -30,3 +30,23 @@ class Solution {
         return answer;
     }
 }
+
+// 더 좋은 코드!
+class Caesar {
+    String caesar(String s, int n) {
+        String result = "";
+        // 알파벳의 주기는 26이므로 n이 26보다 커지는 경우 나눈 나머지만큼의 칸만 이동하면 된다.
+        n = n % 26;
+        for (int i = 0; i < s.length(); i++) {
+            char ch = s.charAt(i);
+            // 소문자이면 ch에서 'a' 만큼 뺀 후 n만큼 이동한 값을 26으로 나눠주면 'a'로부터 n칸 이동한 값이 된다.
+            if (Character.isLowerCase(ch)) {
+                ch = (char) ((ch - 'a' + n) % 26 + 'a');
+            } else if (Character.isUpperCase(ch)) {
+                ch = (char) ((ch - 'A' + n) % 26 + 'A');
+            }
+            result += ch;
+        }
+        return result;
+    }
+}
