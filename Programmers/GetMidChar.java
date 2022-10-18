@@ -12,7 +12,6 @@ class Solution {
             answer += s.charAt(half - 1);
             answer += s.charAt(half);
         }
-        
         return answer;
     }
 }
