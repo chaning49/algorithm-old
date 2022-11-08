@@ -2,7 +2,6 @@ package com.codestates.coplit;
 
 public class Solution {
     public int[] quickSort(int[] arr) {
-        // TODO:
         if (arr.length == 0) return arr;
 
         int start = 0;
