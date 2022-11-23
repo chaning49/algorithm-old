@@ -2,7 +2,7 @@ package com.codestates.coplit;
 
 public class Solution {
     public int binarySearch(int[] arr, int target) {
-        // TODO:
+        // TODO: 
         // 시작 인덱스와 끝 인덱스 값 정하기
         int start = 0;
         int end = arr.length - 1;
