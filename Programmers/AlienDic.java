@@ -20,6 +20,7 @@ class Solution {
             // check가 true이면 spell에 있는 알파벳이 모두 존재하는 경우이기 때문에 1 리턴
             if (check) return 1;
         }
+
         // 반복문에서 1이 리턴되지 않으면 2 리턴
         return 2;
     }
