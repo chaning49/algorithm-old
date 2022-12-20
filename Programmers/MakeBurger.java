@@ -1,6 +1,6 @@
 class Solution {
     public int solution(int[] ingredient) {
-        int[]  = new int[ingredient.length];
+        int[] stack = new int[ingredient.length];
         int sp = 0;
         int answer = 0;
         for (int i : ingredient) {
